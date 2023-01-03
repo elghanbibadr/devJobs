@@ -1,8 +1,13 @@
-
+import React  from "react"
+import Header from "./componenet/Header/Header"
+import Main from "./componenet/Main/Main"
 function App() {
 
   return (
-    <h1 className="text-white">hello world</h1>
+    <React.Fragment>
+      <Header />
+      <Main/>
+    </React.Fragment>
   )
 }
 

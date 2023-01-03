@@ -2,7 +2,7 @@ import React from 'react'
 
 const ApplyForJobBar = () => {
   return (
-    <div>ApplyForJobBar</div>
+    <div><h1>ApplyForJobBar</h1></div>
   )
 }
 

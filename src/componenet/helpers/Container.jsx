@@ -4,7 +4,7 @@ import Home from '../Home/Home'
 const Container = () => {
   return (
     <main className='bg-darkBlue'>
-      <section className=" max-w-8xl p-8 mx-auto h-96">
+      <section className=" max-w-8xl p-8 mx-auto h-screen">
       <Home/>
        <Details/>
       </section>

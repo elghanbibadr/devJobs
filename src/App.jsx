@@ -7,6 +7,7 @@ function App() {
     <React.Fragment>
       <Header />
       <Main/>
+     
     </React.Fragment>
   )
 }

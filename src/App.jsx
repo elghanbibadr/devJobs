@@ -1,13 +1,12 @@
 import React  from "react"
 import Header from "./componenet/Header/Header"
-import Main from "./componenet/Main/Main"
+import Container from "./componenet/helpers/Container"
 function App() {
 
   return (
     <React.Fragment>
       <Header />
-      <Main/>
-     
+      <Container/>
     </React.Fragment>
   )
 }

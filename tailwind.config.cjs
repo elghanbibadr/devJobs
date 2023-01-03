@@ -10,6 +10,9 @@ module.exports = {
       "cardsBg":'#19202D',
       "lightCyan":"#6670E2",
       "textColor":"#6E807C"
+      },
+      maxWidth: {
+        '8xl': '110rem',
       }
   },
   plugins: [],

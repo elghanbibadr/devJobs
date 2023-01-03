@@ -12,8 +12,19 @@
     }
   }
 
+header{
+    background-image: url(/src/assets/mobile/bg-pattern-header.svg);
+}
 
+.card{
+    background-color: theme(colors[cardsBg]) ;
+    border-radius: 10px;
+}
 
+h1{
+    color: white;
+    font-size: 3rem;
+}
 p{
  color: theme(colors[textColor]);
  font-size: 1.4rem;

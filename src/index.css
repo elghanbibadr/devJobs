@@ -27,6 +27,7 @@ h1{
 }
 p{
  color: theme(colors[textColor]);
- font-size: 1.4rem;
+ font-size: 1.6rem;
+ font-weight: 500;
 }
 

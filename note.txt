@@ -1,0 +1,44 @@
+//PROJECT STRACTURE
+ HOME PAGE
+1-create a header componenet that includes the logo and dark mode toggler
+2-create a main component as a container with max width and background color
+3-create a nested component for the main that is the searchbar compoonent with a card wrraper with backgournd color and padding and border radious
+4-create a jobs with a grid that contains all jobs
+5-create a job component with a card wrraper that contains Api results for the job
+
+JOBDETAILPAGE
+
+1-create a companyDetails component with a wrraper card
+2-create a jobDetails compoentn with a wrapper card as an article
+
+
+final STRACTURE
+
+1-App
+<Fragment> 
+<Header />
+<Main> -> Our container component with max-width
+<Fragment/>
+
+2-Main
+
+<Home />
+  {isJobClicked &&  <JobDetails /> }
+
+
+3- <Home / >
+<Searchbar />
+<AllJobs />
+
+4-Searchbar
+<Form>  -> will contains modal for mobile and normal display for desktop and tablette
+
+5-AllJobs
+grid (1fr and 1fr 1fr for tablette and 3fr for desktop)
+
+
+
+6-JobDetails
+<companyDetails/>
+<jobDescription/>
+<ApplyForJobBar />

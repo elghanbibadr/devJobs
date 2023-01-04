@@ -8,9 +8,9 @@ const Wrraper=()=>{
 const {isUserSelectJob , setIsUserSelectJob}=useContext(AppContext);
   return (
      <main className="bg-darkBlue">
+     <section className=" max-w-8xl p-8 mx-auto h-screen">
       <Home/>
       {isUserSelectJob && <Details/>}   
-     <section className=" max-w-8xl p-8 mx-auto h-screen">
        </section>
    </main>
   )

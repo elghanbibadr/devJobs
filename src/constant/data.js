@@ -1,8 +1,23 @@
-[
+
+import scootLogo from "../assets/logos/scoot.svg";
+import blogrLogo from "../assets/logos/blogr.svg";
+import vectorLogo from "../assets/logos/vector.svg";
+import officeLiteLogo from "../assets/logos/officelite.svg";
+import podLogo from "../assets/logos/pod.svg";
+import creativeLogo from "../assets/logos/creative.svg";
+import pomodoroLogo from "../assets/logos/pomodoro.svg";
+import makerLogo from "../assets/logos/maker.svg";
+import coffeeroastersLogo from "../assets/logos/coffeeroasters.svg";
+import mastercraftLogo from "../assets/logos/mastercraft.svg";
+import typemasterLogo from "../assets/logos/typemaster.svg";
+import crowdfundLogo from "../assets/logos/crowdfund.svg";
+
+
+export const data=[
   {
     "id": 1,
     "company": "Scoot",
-    "logo": "./assets/logos/scoot.svg",
+    "logo": scootLogo,
     "logoBackground": "hsl(36, 87%, 49%)",
     "position": "Senior Software Engineer",
     "postedAt": "5h ago",
@@ -33,7 +48,7 @@
   {
     "id": 2,
     "company": "Blogr",
-    "logo": "./assets/logos/blogr.svg",
+    "logo": blogrLogo,
     "logoBackground": "hsl(12, 79%, 52%)",
     "position": "Haskell and PureScript Dev",
     "postedAt": "20h ago",
@@ -64,7 +79,7 @@
   {
     "id": 3,
     "company": "Vector",
-    "logo": "./assets/logos/vector.svg",
+    "logo": vectorLogo,
     "logoBackground": "hsl(235, 10%, 23%)",
     "position": "Midlevel Back End Engineer",
     "postedAt": "1d ago",
@@ -94,7 +109,7 @@
   {
     "id": 4,
     "company": "Office Lite",
-    "logo": "./assets/logos/officelite.svg",
+    "logo": officeLiteLogo,
     "logoBackground": "hsl(227, 62%, 48%)",
     "position": "Senior Application Engineer",
     "postedAt": "2d ago",
@@ -126,7 +141,7 @@
   {
     "id": 5,
     "company": "Pod",
-    "logo": "./assets/logos/pod.svg",
+    "logo": podLogo,
     "logoBackground": "hsl(216, 46%, 14%)",
     "position": "Remote DevOps Engineer",
     "postedAt": "2d ago",
@@ -161,7 +176,7 @@
   },
   {
     "id": 6,
-    "company": "Creative",
+    "company": creativeLogo,
     "logo": "./assets/logos/creative.svg",
     "logoBackground": "hsl(295, 55%, 21%)",
     "position": "Desktop Support Manager",
@@ -196,7 +211,7 @@
   {
     "id": 7,
     "company": "Pomodoro",
-    "logo": "./assets/logos/pomodoro.svg",
+    "logo": pomodoroLogo,
     "logoBackground": "hsl(254, 71%, 45%)",
     "position": "iOS Engineer",
     "postedAt": "1w ago",
@@ -227,7 +242,7 @@
   {
     "id": 8,
     "company": "Maker",
-    "logo": "./assets/logos/maker.svg",
+    "logo": makerLogo,
     "logoBackground": "hsl(218, 58%, 31%)",
     "position": "Senior EJB Developer",
     "postedAt": "1w ago",
@@ -258,7 +273,7 @@
   {
     "id": 9,
     "company": "Coffeeroasters",
-    "logo": "./assets/logos/coffeeroasters.svg",
+    "logo": coffeeroastersLogo,
     "logoBackground": "hsl(29, 60%, 87%)",
     "position": "Senior Frontend Developer",
     "postedAt": "1w ago",
@@ -289,7 +304,7 @@
   {
     "id": 10,
     "company": "Mastercraft",
-    "logo": "./assets/logos/mastercraft.svg",
+    "logo": mastercraftLogo,
     "logoBackground": "hsl(0, 0%, 12%)",
     "position": "App & Website Designer",
     "postedAt": "2w ago",
@@ -322,7 +337,7 @@
   {
     "id": 11,
     "company": "Crowdfund",
-    "logo": "./assets/logos/crowdfund.svg",
+    "logo": crowdfundLogo,
     "logoBackground": "hsl(157, 57%, 50%)",
     "position": "Fullstack Developer",
     "postedAt": "1mo ago",
@@ -355,7 +370,7 @@
   {
     "id": 12,
     "company": "Typemaster",
-    "logo": "./assets/logos/typemaster.svg",
+    "logo": typemasterLogo,
     "logoBackground": "hsl(22, 89%, 52%)",
     "position": "Technical Lead Engineer",
     "postedAt": "1mo ago",
@@ -387,7 +402,7 @@
   {
     "id": 13,
     "company": "Crowdfund",
-    "logo": "./assets/logos/crowdfund.svg",
+    "logo": crowdfundLogo,
     "logoBackground": "hsl(157, 57%, 50%)",
     "position": "Front-end Developer",
     "postedAt": "1mo ago",
@@ -419,7 +434,7 @@
   {
     "id": 14,
     "company": "Coffeeroasters",
-    "logo": "./assets/logos/coffeeroasters.svg",
+    "logo": coffeeroastersLogo,
     "logoBackground": "hsl(29, 60%, 87%)",
     "position": "Junior Full-Stack Developer",
     "postedAt": "1mo ago",
@@ -451,7 +466,7 @@
   {
     "id": 15,
     "company": "Blogr",
-    "logo": "./assets/logos/blogr.svg",
+    "logo": blogrLogo,
     "logoBackground": "hsl(12, 79%, 52%)",
     "position": "Midweight Front-end Developer",
     "postedAt": "1mo ago",

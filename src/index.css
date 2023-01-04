@@ -18,7 +18,7 @@ header{
 
 .card{
     background-color: theme(colors[cardsBg]) ;
-    border-radius: 10px;
+    border-radius: 6px;
 }
 
 h1{
@@ -31,3 +31,11 @@ p{
  font-weight: 500;
 }
 
+
+article{
+    display: grid;
+    row-gap: 6rem;
+    column-gap: 3rem;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+
+}

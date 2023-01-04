@@ -176,8 +176,8 @@ export const data=[
   },
   {
     "id": 6,
-    "company": creativeLogo,
-    "logo": "./assets/logos/creative.svg",
+    "company": "creative",
+    "logo": creativeLogo,
     "logoBackground": "hsl(295, 55%, 21%)",
     "position": "Desktop Support Manager",
     "postedAt": "4d ago",

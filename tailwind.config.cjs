@@ -13,7 +13,7 @@ module.exports = {
       "white":'#fff'
       },
       maxWidth: {
-        '8xl': '110rem',
+        '8xl': '120rem',
       }
   },
   plugins: [],

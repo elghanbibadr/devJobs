@@ -3,7 +3,7 @@ import logo from ".././../assets/desktop/logo.svg"
 import sunLogo from "../../assets/desktop/icon-sun.svg"
 import moonLogo from "../../assets/desktop/icon-moon.svg"
 const Header = () => {
-  const [darkMode, setDarkMode] = useState(false);
+  const [darkMode, setDarkMode] = useState(true);
   
   const  toggleDarkMode= () => {
    setDarkMode(prv => !prv)

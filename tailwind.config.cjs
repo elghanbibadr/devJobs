@@ -12,7 +12,9 @@ module.exports = {
       "lightCyan":"#6670E2",
       "textColor":"#6E807C",
       "white":'#fff',
-      "darkWhite":"#F4F6F8"
+      "darkWhite":"#F4F6F8",
+      "paleBlue":"#353641",
+       "btn2Bg" :"eeeffc"
       
       },
       maxWidth: {

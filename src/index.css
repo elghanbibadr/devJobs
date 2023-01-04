@@ -45,7 +45,10 @@ main,.card {
      transition: color .5s ease-in;
 }
 
-
+ button{
+    transition: all .5s ease-in;
+     
+}
 
  .toggler{
     transition: transform .4s ease-in;

@@ -8,9 +8,9 @@ const AllJobs = () => {
 console.log(data)
 
   return (
-    <article className="">
-    {data.map(({id,position,location,company,logo,logoBackground})=>{
-      return <Job key={id} position={position} logoBackground={logoBackground} location={location} company={company} img={logo}  />
+    <article className="grid grid-cols-1 gap-y-24 md:grid-cols-2 gap-x-10 lg:grid-cols-3">
+    {data.map(({id,position, location,company,logo,logoBackground,postedAt,contract})=>{
+      return <Job key={id} postedAt={postedAt} position={position} logoBackground={logoBackground} contract={contract} location={location} company={company} img={logo}  />
     })}
     </article>
   )

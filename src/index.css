@@ -31,4 +31,22 @@ p{
  font-weight: 500;
 }
 
+img{
+    cursor: pointer;
+}
+main,.card {
+  transition: background .5s ease-in ;
+}
 
+.dark h2 ,
+.dark h1,
+.dark h3{
+     color: #19202D; 
+     transition: color .5s ease-in;
+}
+
+
+
+ .toggler{
+    transition: transform .4s ease-in;
+}

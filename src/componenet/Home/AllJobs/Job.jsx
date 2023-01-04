@@ -2,7 +2,7 @@ import React from 'react'
 
 const Job = (props) => {
   return (
-    <div className='card relative px-8 py-16 job'>
+    <div className='card relative px-8 py-16 job dark:bg-white'>
       <div className='absolute -top-8 rounded-2xl h-20 w-24 p-4 flex justify-center items-center'
         style={{ backgroundColor: props.logoBackground }}>
         <img src={props.img}

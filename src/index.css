@@ -53,3 +53,37 @@ main,.card {
  .toggler{
     transition: transform .4s ease-in;
 }
+
+
+.searchBar .input-field{
+    /* display: flex ; */
+
+}
+.searchBar input{
+  background-color: transparent;
+  font-size: 1.5rem;
+  outline: none;
+  margin-left: 14px;
+  font-weight: 600;
+}
+
+
+/* modal overlay */
+
+.modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 1000;
+  }
+
+
+.modal{
+height: 300px;
+margin: 2rem;
+position: relative;
+top: 20%;
+}

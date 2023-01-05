@@ -5,14 +5,15 @@ import { AppContext } from '../../store/AppContext'
 
 const Wrraper=()=>{
 
-const {isUserSelectJob , setIsUserSelectJob}=useContext(AppContext);
+const {isUserSelectJobId , setIsUserSelectJobId}=useContext(AppContext);
   return (
      <main className="bg-darkBlue dark:bg-darkWhite">
      <section className=" max-w-8xl p-8 mx-auto ">
-      <Home/>
-      {isUserSelectJob && <Details/>}   
+      {!isUserSelectJobId && <Home/>}
+      {isUserSelectJobId  && <Details/>}  
        </section>
    </main>
+
   )
 }
 

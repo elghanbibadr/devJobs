@@ -4,12 +4,12 @@ export const AppContext = createContext(null);
 
 export const AppContextProvider = ({ children }) => {
 
-  const [isUserSelectJob,setIsUserSelectJob]=useState(false)
+  const [isUserSelectJobId,setIsUserSelectJobId]=useState(undefined)
 
 
     const value = {
-      isUserSelectJob,
-      setIsUserSelectJob
+      isUserSelectJobId,
+      setIsUserSelectJobId
        
     }
 

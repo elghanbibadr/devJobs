@@ -14,7 +14,7 @@ module.exports = {
       "white":'#fff',
       "darkWhite":"#F4F6F8",
       "paleBlue":"#353641",
-       "btn2Bg" :"eeeffc"
+       "btn2" :"eeeffc"
       
       },
       maxWidth: {

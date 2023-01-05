@@ -1,5 +1,6 @@
 import React ,{useContext} from 'react'
 import { AppContext } from '../../../store/AppContext'
+import { data } from '../../../constant/data'
 
 const Job = (props) => {
   const {isUserSelectJobId,setIsUserSelectJobId}=useContext(AppContext)
@@ -7,8 +8,9 @@ const Job = (props) => {
   const handleUserSelectJob=(e)=>{
     if(!e.target.className.includes('jobName')) return;
     setIsUserSelectJobId(e.currentTarget.id)
-
   }
+
+
   return (
     <div id={props.id} onClick={handleUserSelectJob} className='card relative px-8 py-16 job dark:bg-white'>
       <div className='absolute -top-8 rounded-2xl h-20 w-24 p-4 flex justify-center items-center'

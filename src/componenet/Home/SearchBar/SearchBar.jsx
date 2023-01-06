@@ -20,11 +20,11 @@ const SearchBar = () => {
     }
   }
   return (
-    <div className='card searchBar relative bottom-20 p-8 dark:bg-white'>
+    <div className='card searchBar relative bottom-20 p-8 dark:bg-white md:py-2 px-8 '>
 
       <form  className='flex justify-between items-center'>
-        <div className='input-field'>
-           <img className='hidden md:inline-block' src={searchLogo} alt='search icon' />
+        <div className='input-field flex items-center'>
+          <img className='hidden md:inline-block' src={searchLogo} alt='search icon' />
           <input type='text' 
           placeholder='Filter by title' 
           />
@@ -35,17 +35,17 @@ const SearchBar = () => {
           </div>
           {/* modal and overlay goes here */}
             <ModalOverlay overlayClicked={handleOverlayClicked} modalIsOpen={modalIsOpen}>
-            <div className="modal card md:flex items-center ">
-              <div className={`input-field border-textColor border-b-2 p-10 px-10 ${!modalIsOpen ? 'hidden' :"flex items-center"} md:flex p-0 border-none `}>
+            <div className="modal py-4 m-10  card md:flex items-center md:m-0 dark:bg-white ">
+              <div className={`input-field border-textColor border-b-2 p-10 px-10 ${!modalIsOpen ? 'hidden' :"flex items-center"} md:flex md:p-0 md:border-none  `}>
                    <img  src={locationLogo} alt='search icon' /> 
                         <input type='text' 
                         placeholder='Filter by Location ...'  />
               </div>
-              <div className='flex items-center p-14 md:p-0 '>
-                <input type='checkbox' className='mr-4'/>
-                <h5 className='text-white font-bold text-2xl'>Full Time</h5>
+              <div className='flex items-center my-10 md:p-0 w-1/2  '>
+                <input type='checkbox' className='mr-6'/>
+                <h5 className='text-white font-bold text-2xl dark:text-textColor'>Full Time</h5>
               </div>
-              <Button  text='Search' bg='w-1/4 m-4 lg:relative left-40 '/>
+              <Button  text='Search' bg='block mx-auto  w-3/4 mb-4 md:w-fit'/>
             </div>
             </ModalOverlay>
     

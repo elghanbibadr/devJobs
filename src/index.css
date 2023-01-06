@@ -70,7 +70,7 @@ main,.card {
 
 /* modal overlay */
 
-@media screen and (max-width:800px) {
+@media screen and (max-width:768px) {
 
         .modal-overlay {
             position: fixed;
@@ -90,7 +90,7 @@ main,.card {
 
 .modal{
 /* height: 300px; */
-margin: 2rem;
+margin: 3rem;
 position: relative;
 top: 20%;
 }

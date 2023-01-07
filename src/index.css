@@ -55,16 +55,13 @@ main,.card {
 }
 
 
-.searchBar .input-field{
-    /* display: flex ; */
-
-}
 .searchBar input{
   background-color: transparent;
   font-size: 1.5rem;
   outline: none;
   margin-left: 14px;
   font-weight: 600;
+  color: white;
 }
 
 

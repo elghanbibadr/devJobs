@@ -36,7 +36,7 @@ const SearchBar = () => {
           {/* modal and overlay goes here */}
             <ModalOverlay overlayClicked={handleOverlayClicked} modalIsOpen={modalIsOpen}>
             <div className="modal py-4 m-10  card md:flex items-center md:m-0 dark:bg-white ">
-              <div className={`input-field border-textColor border-b-2 p-10 px-10 ${!modalIsOpen ? 'hidden' :"flex items-center"} md:flex md:p-0 md:border-none  `}>
+              <div className={`input-field border-textColor border-b-2 p-10 px-10 ${!modalIsOpen ? 'hidden' :"flex items-center"} md:flex md:p-0 md:border-none md:w-full md:relative left-20  `}>
                    <img  src={locationLogo} alt='search icon' /> 
                         <input type='text' 
                         placeholder='Filter by Location ...'  />

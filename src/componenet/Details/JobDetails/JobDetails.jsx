@@ -6,7 +6,6 @@ const JobDetails = () => {
   const {userJobClickedJobDetails}=useContext(AppContext)
   console.log(userJobClickedJobDetails)
   const {postedAt,description,position,requirements,role,location,contract}=userJobClickedJobDetails
-  console.log(requirements.content)
   return (
     <section className='card p-10 my-10 md:px-16'>
       < header className='md:flex items-center  justify-between'>

@@ -11,6 +11,7 @@ const Details = () => {
 
   return (
     <React.Fragment>
+      
         <CompanyDetails/>
         <JobDetails/>
         <ApplyForJobBar/>

@@ -42,7 +42,10 @@ const SearchBar = () => {
                         placeholder='Filter by Location ...'  />
               </div>
               <div className='flex items-center my-10 md:p-0 w-1/2  '>
-                <input type='checkbox' className='mr-6'/>
+                <label  className="checkbox-Container">
+                  <input type='checkbox' className='mr-6'/>
+                  <span class="checkmark"></span>
+                  </label>
                 <h5 className='text-white font-bold text-2xl dark:text-textColor'>Full Time</h5>
               </div>
               <Button  text='Search' bg='block mx-auto  w-3/4 mb-4 md:w-fit'/>

@@ -5,7 +5,6 @@ import locationLogo from '../../../assets/desktop/icon-location.svg'
 import filterLogo from '../../../assets/mobile/icon-filter.svg'
 import SearchSvg from './SearchSvg'
 import ModalOverlay from './ModalOverlay'
-
 const SearchBar = () => {
   const [modalIsOpen,setModalIsOpen]=useState(false)
 

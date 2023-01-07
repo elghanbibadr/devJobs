@@ -14,7 +14,8 @@ module.exports = {
       "white":'#fff',
       "darkWhite":"#F4F6F8",
       "paleBlue":"#353641",
-       "lighterCyan" :"eeeffc"
+       "lighterCyan" :"eeeffc",
+       "red":"#FF0800",
       
       },
       maxWidth: {

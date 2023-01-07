@@ -18,10 +18,15 @@ const SearchBar = () => {
       setModalIsOpen(false)
     }
   }
+
+  const handleFormSubmited=(e)=>{
+   e.preventDefault();
+  }
+
   return (
     <div className='card searchBar relative bottom-20 p-8 dark:bg-white md:py-2 px-8 '>
 
-      <form  className='flex justify-between items-center'>
+      <form onSubmit={handleFormSubmited}  className='flex justify-between items-center'>
         <div className='input-field flex items-center'>
           <img className='hidden md:inline-block' src={searchLogo} alt='search icon' />
           <input type='text' 

@@ -3,9 +3,7 @@ import { AppContext } from '../../../store/AppContext'
 import Button from '../../helpers/Button'
 
 const JobDetails = () => {
-  const {userJobClickedJobDetails}=useContext(AppContext)
-  console.log(userJobClickedJobDetails)
-  const {postedAt,description,position,requirements,role,location,contract}=userJobClickedJobDetails
+  const {userJobClickedJobDetails:{postedAt,description,position,requirements,role,location,contract}}=useContext(AppContext)
   return (
     <section className='card p-10 my-10 md:px-16'>
       < header className='md:flex items-center  justify-between'>

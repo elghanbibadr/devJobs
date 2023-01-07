@@ -20,6 +20,10 @@
     background-color: theme(colors[cardsBg]) ;
     border-radius: 6px;
 }
+.dark .btn-2{
+  background-color: #eeeffc;
+  color: theme(colors[lightCyan]);
+}
 
 h1{
     color: white;

@@ -10,7 +10,7 @@ module.exports = {
      "darkBlue":'#121721',
       "cardsBg":'#19202D',
       "lightCyan":"#6670E2",
-      "textColor":"#6E807C",
+      "textColor":"#6e8098",
       "white":'#fff',
       "darkWhite":"#F4F6F8",
       "paleBlue":"#353641",
@@ -18,7 +18,7 @@ module.exports = {
       
       },
       maxWidth: {
-        '8xl': '120rem',
+        '8xl': '110rem',
       }
   },
   plugins: [],

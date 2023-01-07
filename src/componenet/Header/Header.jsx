@@ -14,7 +14,7 @@ const Header = () => {
   },[darkMode])
 
   return (
-    <header className="h-60 pt-10 bg-no-repeat px-6 bg-cover ">
+    <header className="h-60 pt-10 header bg-no-repeat px-6 bg-cover ">
      <div className='max-w-8xl flex items-center justify-between mx-auto p-8'>
         <img src={logo} />
        <div onClick={toggleDarkMode} className='flex items-center'>

@@ -6,15 +6,15 @@ const CompanyDetails = () => {
  const {  userJobClickedJobDetails }=useContext(AppContext);
  
   return (
-    <div className='card relative flex flex-col items-center p-14 md:flex-row justify-between' >
-      <div className='w-32   flex justify-center  items-center absolute -top-20 left-0  right-0 mx-auto p-6 rounded-2xl h-28 md:-top-0 left-0 mx-2 mr-32 h-full w-72' style={{backgroundColor: userJobClickedJobDetails.logoBackground}}>
-       <img src={userJobClickedJobDetails.logo} />
+    <div className='card text-center relative flex items-center  flex-col  p-14 md:flex-row justify-between md:text-left dark:bg-white ' >
+      <div className='   flex justify-center w-28 h-24 items-center  mx-auto  p-6 relative bottom-24 rounded-2xl  md:absolute md:bottom-0 md:h-full md:w-60 left-0' style={{backgroundColor: userJobClickedJobDetails.logoBackground}}>
+       <img className='w-full' src={userJobClickedJobDetails.logo} />
       </div>
-      <div className='md:ml-80'>
-        <h3 className='text-white text-4xl font-bold'>{userJobClickedJobDetails.company}</h3>
-        <p className='my-10'>{userJobClickedJobDetails.apply}</p>
+      <div className='md:relative md:left-72'>
+        <h3 className='text-white text-4xl font-bold '>{userJobClickedJobDetails.company}</h3>
+        <p className='my-8 md:my-4'>{userJobClickedJobDetails.apply}</p>
       </div>
-     <Button text='Company site' bg='bg-paleBlue dark:bg-lightCyan dark:text-btn2' />
+     <Button text='Company site' bg='bg-paleBlue ' />
     </div>
   )
 }

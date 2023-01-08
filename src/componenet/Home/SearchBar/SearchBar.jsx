@@ -1,13 +1,16 @@
-import React ,{useEffect, useRef, useState} from 'react'
+import React ,{useContext, useEffect, useRef, useState} from 'react'
 import Button from '../../helpers/Button'
+import { data } from '../../../constant/data'
 import searchLogo from '../../../assets/desktop/icon-search.svg'
 import locationLogo from '../../../assets/desktop/icon-location.svg'
 import filterLogo from '../../../assets/mobile/icon-filter.svg'
 import SearchSvg from './SearchSvg'
 import ModalOverlay from './ModalOverlay'
+import { AppContext } from '../../../store/AppContext'
 const SearchBar = () => {
   const [modalIsOpen,setModalIsOpen]=useState(false);
   const [showErrorMsg,setShowErrorMsg]=useState(false);
+  const {jobs,setJobs}=useContext(AppContext)
    const inputLocationRef=useRef();
    const inputTitleRef=useRef();
    const inputCheckRef=useRef();
@@ -26,10 +29,48 @@ const SearchBar = () => {
     e.preventDefault();
     if (!inputLocationRef.current.value &&  !inputTitleRef.current.value && !inputCheckRef.current.checked){
       setShowErrorMsg(true)
+    }else{
+      if( inputLocationRef.current.value && inputLocationRef.current.value ){
+
+        const filtered=data.filter(job=>{
+        if(job.position.toLowerCase().includes(inputTitleRef.current.value.toLowerCase()) &&
+          job.location.toLowerCase().includes(inputLocationRef.current.value.toLowerCase())  ){
+            return job
+          }})
+          setJobs(filtered)
+      }
+      
+    else if(  inputLocationRef.current.value ){
+        const filtered=data.filter(job=>{
+        if(job.location.toLowerCase().includes(inputLocationRef.current.value.toLowerCase())  ){
+            return job
+          }})
+          setJobs(filtered)
+      }
+    else if(  inputTitleRef.current.value ){
+        const filtered=data.filter(job=>{
+        if(job.position.toLowerCase().includes(inputTitleRef.current.value.toLowerCase())  ){
+            return job
+          }})
+          setJobs(filtered)
+      }
+
+    
+      
+       
+     console.log(data)
     }
   }
 
 
+  useEffect(()=>{
+    setTimeout(()=>{
+      setShowErrorMsg(false)
+    },3000)
+  },[showErrorMsg])
+
+ 
+  //  console.log(inputCheckRef.current.checked)
 
   return (
     <>
@@ -70,7 +111,7 @@ const SearchBar = () => {
         
       </form>
     </div>
-       {showErrorMsg && <p className='text-red absolute  top-36'>Please fill out at least one input</p>}
+       {showErrorMsg && <p className='error-msg absolute  top-36'>Please fill out at least one input</p>}
             </>
   )
 }

@@ -174,3 +174,8 @@ top: 20%;
   -ms-transform: rotate(45deg);
   transform: rotate(45deg);
 }
+
+
+.error-msg{
+  color: red;
+}

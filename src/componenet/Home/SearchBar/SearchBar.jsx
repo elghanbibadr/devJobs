@@ -1,5 +1,6 @@
 import React ,{useContext, useEffect, useRef, useState} from 'react'
 import Button from '../../helpers/Button'
+import notFoundLogo from '../../../assets/desktop/error.png'
 import { data } from '../../../constant/data'
 import searchLogo from '../../../assets/desktop/icon-search.svg'
 import locationLogo from '../../../assets/desktop/icon-location.svg'
@@ -58,8 +59,8 @@ const SearchBar = () => {
     
       
        
-     console.log(data)
     }
+
   }
 
 
@@ -70,7 +71,6 @@ const SearchBar = () => {
   },[showErrorMsg])
 
  
-  //  console.log(inputCheckRef.current.checked)
 
   return (
     <>
@@ -111,7 +111,8 @@ const SearchBar = () => {
         
       </form>
     </div>
-       {showErrorMsg && <p className='error-msg absolute  top-36'>Please fill out at least one input</p>}
+       {showErrorMsg &&  <p className='error-msg absolute  top-36'>Please fill out at least one input</p>  }
+
             </>
   )
 }

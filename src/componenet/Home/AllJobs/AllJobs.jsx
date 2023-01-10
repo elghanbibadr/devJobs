@@ -1,6 +1,7 @@
 import React,{useContext, useState} from 'react'
 import Job from './Job'
 import {data} from '../../../constant/data'
+import notFoundLogo from "../../../assets/desktop/error.png"
 import Button from '../../helpers/Button';
 import { AppContext } from '../../../store/AppContext';
 
@@ -23,6 +24,12 @@ const AllJobs = () => {
       { jobs.length>=9 &&  counter <= 9 &&  <Button onClick={loadMoreBtnClicked} text='Load more' bg='w-80' />}
       {   jobs.length>=9 &&  counter > 9 &&  <Button onClick={loadLessBtnClicked} text='Load less' bg='w-80' />}
     </div>
+    {jobs.length===0 && 
+       <div className='not found flex flex-col items-center'>
+        <h3 className='text-white text-3xl font-bold mb-8'>Not found</h3>
+       <img className='w-60 h-60'  src={notFoundLogo}  alt='not found' />
+     </div>
+    }
     </>
   )
 }

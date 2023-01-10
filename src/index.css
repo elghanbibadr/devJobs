@@ -98,7 +98,9 @@ top: 20%;
 
 
 
-
+main{
+  min-height: 100vh;
+}
 
 
 /* Customize the label (the container) */

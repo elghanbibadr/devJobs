@@ -20,8 +20,8 @@ const AllJobs = () => {
     })}
     </article>
     <div className=' flex justify-center items-center my-10 '>
-      { counter <= 9 &&  <Button onClick={loadMoreBtnClicked} text='Load more' bg='w-80' />}
-      { counter > 9 &&  <Button onClick={loadLessBtnClicked} text='Load less' bg='w-80' />}
+      { jobs.length>=9 &&  counter <= 9 &&  <Button onClick={loadMoreBtnClicked} text='Load more' bg='w-80' />}
+      {   jobs.length>=9 &&  counter > 9 &&  <Button onClick={loadLessBtnClicked} text='Load less' bg='w-80' />}
     </div>
     </>
   )

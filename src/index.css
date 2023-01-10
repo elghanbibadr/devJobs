@@ -68,6 +68,9 @@ main,.card {
   color: white;
 }
 
+.dark .searchBar input{
+  color: black;
+}
 
 /* modal overlay */
 

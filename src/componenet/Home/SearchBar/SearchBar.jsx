@@ -1,6 +1,5 @@
 import React ,{useContext, useEffect, useRef, useState} from 'react'
 import Button from '../../helpers/Button'
-import notFoundLogo from '../../../assets/desktop/error.png'
 import { data } from '../../../constant/data'
 import searchLogo from '../../../assets/desktop/icon-search.svg'
 import locationLogo from '../../../assets/desktop/icon-location.svg'
@@ -11,10 +10,10 @@ import { AppContext } from '../../../store/AppContext'
 const SearchBar = () => {
   const [modalIsOpen,setModalIsOpen]=useState(false);
   const [showErrorMsg,setShowErrorMsg]=useState(false);
+  const [isFullTimeChecked,setIsFullTimeChecked]=useState(false);
   const {jobs,setJobs}=useContext(AppContext)
    const inputLocationRef=useRef();
    const inputTitleRef=useRef();
-   const inputCheckRef=useRef();
    
   const handleFilterClicked=()=>{
     setModalIsOpen(prv => !prv)
@@ -28,7 +27,7 @@ const SearchBar = () => {
   
   const handleFormSubmited=(e)=>{
     e.preventDefault();
-    if (!inputLocationRef.current.value &&  !inputTitleRef.current.value && !inputCheckRef.current.checked){
+    if (!inputLocationRef.current.value &&  !inputTitleRef.current.value && !isFullTimeChecked){
       setShowErrorMsg(true)
     }else{
       if( inputLocationRef.current.value && inputLocationRef.current.value ){
@@ -56,20 +55,24 @@ const SearchBar = () => {
           setJobs(filtered)
       }
 
-    
-      
-       
+    if (isFullTimeChecked){
+       setJobs(prv => prv.filter(item=> item.contract==='Full Time'))
+     
+    } 
     }
 
   }
 
 
-  useEffect(()=>{
-    setTimeout(()=>{
-      setShowErrorMsg(false)
-    },3000)
-  },[showErrorMsg])
+const handleCheckBoxInputClicked=()=>{
+  setIsFullTimeChecked(prv => !prv)
+}
 
+useEffect(()=>{
+  setTimeout(()=>{
+    setShowErrorMsg(false)
+  },3000)
+},[showErrorMsg])
  
 
   return (
@@ -100,7 +103,7 @@ const SearchBar = () => {
               </div>
               <div className='flex items-center my-10 md:p-0 w-1/2  '>
                 <label  className="checkbox-Container">
-                  <input type='checkbox' ref={inputCheckRef} className='mr-6'/>
+                  <input onClick={handleCheckBoxInputClicked} type='checkbox'  className='mr-6'/>
                   <span class="checkmark"></span>
                   </label>
                 <h5 className='text-white font-bold text-2xl dark:text-textColor'>Full Time</h5>

@@ -2,9 +2,14 @@ import React, { useContext, useEffect } from 'react'
 import { AppContext } from '../../../store/AppContext'
 import Button from '../../helpers/Button';
 import leftArrow from '../../../assets/desktop/arrow-left-solid.svg';
+import { data } from '../../../constant/data';
 const CompanyDetails = () => {
- const {userJobClickedJobDetails,setIsUserSelectJobId}=useContext(AppContext);
- const handleBackToHomeClick=()=>setIsUserSelectJobId(undefined)
+
+ const {userJobClickedJobDetails,setIsUserSelectJobId,jobs,setJobs}=useContext(AppContext);
+ const handleBackToHomeClick=()=>{
+   setIsUserSelectJobId(undefined)
+   setJobs(data)
+ }
  
  return (
     <>
@@ -23,7 +28,9 @@ const CompanyDetails = () => {
         <h3 className='text-white text-4xl font-bold '>{userJobClickedJobDetails.company}</h3>
         <p className='my-8 md:my-4'>{userJobClickedJobDetails.apply}</p>
       </div>
+      <a className='inline-block  ' target="_blank" href="https://example.com/maker/apply" >
      <Button text='Company site' bg='bg-paleBlue btn-2 ' />
+     </a>
     </div>
     
     </>

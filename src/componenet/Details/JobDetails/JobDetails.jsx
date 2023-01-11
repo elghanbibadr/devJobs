@@ -4,6 +4,7 @@ import Button from '../../helpers/Button'
 
 const JobDetails = () => {
   const {userJobClickedJobDetails:{postedAt,description,position,requirements,role,location,contract}}=useContext(AppContext)
+  
   return (
     <section className='card p-10 my-10 md:px-16'>
       < header className='md:flex items-center  justify-between'>
@@ -15,7 +16,9 @@ const JobDetails = () => {
         <h1  className='text-white jobName  transition-colors	 text-5xl mb-6 font-semibold cursor-pointer hover:text-textColor'>{position}</h1>
         <h3 className='text-2xl text-lightCyan mt-8 font-semibold '>{location}</h3>
       </div>
+      <a className='inline-block  ' target="_blank" href="https://example.com/maker/apply" >
        <Button text='Apply Now' bg='w-full my-10 md:w-60' /> 
+     </a>
       </header>
       <main className='my-10'>
         <p>{description}</p>

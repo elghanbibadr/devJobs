@@ -30,6 +30,7 @@ const SearchBar = () => {
     setModalIsOpen(false);
     if (!inputLocationRef.current.value &&  !inputTitleRef.current.value && !isFullTimeChecked){
       setShowErrorMsg(true)
+      if (jobs.length < data.length ) setJobs(data)
     }else{
       if( inputLocationRef.current.value && inputLocationRef.current.value ){
 

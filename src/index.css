@@ -99,7 +99,9 @@ position: relative;
 top: 20%;
 }
 
-
+.goBackLink{
+  transition: color .4s;
+}
 
 main{
   min-height: 100vh;

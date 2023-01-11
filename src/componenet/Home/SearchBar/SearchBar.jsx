@@ -27,6 +27,7 @@ const SearchBar = () => {
   
   const handleFormSubmited=(e)=>{
     e.preventDefault();
+    setModalIsOpen(false);
     if (!inputLocationRef.current.value &&  !inputTitleRef.current.value && !isFullTimeChecked){
       setShowErrorMsg(true)
     }else{
